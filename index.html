@@ -5,9 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@1&family=Nunito+Sans:opsz@6..12&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <h3>Multiple Timers App</h3>
+    <span class="timer-container" id="timer-container">
+        <span>Set Time :</span>
+        <span class="timer-display" id="timer-display"> 
+            <input type="number" min="0" max="24" id="hour-input" placeholder="hh" >:
+            <input type="number" min="0" max="60" id="minute-input" placeholder="mm" >:
+            <input type="number" min="0" max="60" id="second-input" placeholder="ss" >
+        </span>
+        <button class="btn" id="btn-set">Set</button>
+    </span>
+    <h5 class="Current-timer">Current Timers</h5>
+    <div id="Current-timer-container" class="Current-timer-container">
+        <h5>You have no timers currently!</h5>
+    </div>
+    <audio src="./average-bell-164965.mp3" class="hide" id="audio"></audio>
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
