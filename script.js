@@ -16,9 +16,9 @@ btnSet.addEventListener("click", () => {
     timerContainer.innerHTML = `
     <span>Left Time :</span>
     <span class="timer-display" id="timer-display"> 
-      <input type="number" id="hour-show" placeholder="hh" >:
-      <input type="number" id="minute-show" placeholder="mm" >:
-      <input type="number" id="second-show" placeholder="ss" >
+      <input type="number" id="hour-show"  >:
+      <input type="number" id="minute-show"  >:
+      <input type="number" id="second-show"  >
     </span>
     <button class="btn" onclick="deleteTask(this)">Delete</button>
   `;
