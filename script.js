@@ -1,7 +1,6 @@
 const CurrentTimerContainer = document.getElementById("Current-timer-container");
 const btnSet = document.getElementById("btn-set");
 const audio = document.getElementById("audio");
-console.log(typeof audio);
 
 btnSet.addEventListener("click", () => {
   // now get the values of timings from the user inputs to set the timer
@@ -23,9 +22,12 @@ btnSet.addEventListener("click", () => {
     </span>
     <button class="btn" onclick="deleteTask(this)">Delete</button>
   `;
-
     CurrentTimerContainer.appendChild(timerContainer);
+
     updateTime(totalTimerValue, timerContainer);
+  }
+  else{
+    alert("Please enter valid time value");
   }
 });
 
@@ -43,7 +45,7 @@ function updateTime(totalTimerValue, timerContainer) {
                                   <span>Timer Is Up !</span>
                                   <button class="btn dark" onclick="deleteTask(this)">Stop</button>`;
       clearInterval(myInterval);
-      audio.onplay();
+      audio.play();
     } 
     else {
       --totalTimerValue;
